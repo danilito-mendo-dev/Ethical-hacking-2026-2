@@ -1,1 +1,1 @@
-# Actividades de hacking etico :D
+# Registro de actividades
