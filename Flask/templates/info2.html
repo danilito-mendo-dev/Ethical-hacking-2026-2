@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Página de Info{% endblock %}
+
+{% block contenido %}
+    <h2>Hola {{ nameHtml }}</h2>
+    <p>Tienes {{ ageHtml }} años.</p>
+
+    {% if ageHtml|int >= 18 %}
+        <p style="color: green;">Eres mayor de edad.</p>
+    {% else %}
+        <p style="color: red;">No eres mayor de edad.</p>
+    {% endif %}
+
+    <a href="/">⬅ Volver al inicio</a>
+{% endblock %}

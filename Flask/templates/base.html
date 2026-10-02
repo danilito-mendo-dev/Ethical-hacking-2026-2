@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi App</title>
+    <!-- Aquí llamamos a tu style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Esto es lo que se comparte en todas las páginas -->
+        <h1>{% block titulo %}Encabezado Base{% endblock %}</h1>
+        <hr>
+
+        <!-- Aquí se insertará el código de cada página individual -->
+        {% block contenido %}{% endblock %}
+    </div>
+</body>
+</html>
